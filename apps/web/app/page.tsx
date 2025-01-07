@@ -6,15 +6,14 @@ type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
   srcDark: string;
 };
-
 const ThemeImage = (props: Props) => {
   const { srcLight, srcDark, ...rest } = props;
 
   return (
-    <>
+    <div className="flex flex-col">
       <Image {...rest} src={srcLight} className="imgLight" />
       <Image {...rest} src={srcDark} className="imgDark" />
-    </>
+    </div>
   );
 };
 
@@ -63,9 +62,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
-          Open alert
-        </Button>
+        <Button className={styles.secondary}>Open alert</Button>
       </main>
       <footer className={styles.footer}>
         <a

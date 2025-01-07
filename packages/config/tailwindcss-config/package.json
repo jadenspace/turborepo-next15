@@ -1,0 +1,8 @@
+{
+  "name": "@repo/tailwindcss-config",
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

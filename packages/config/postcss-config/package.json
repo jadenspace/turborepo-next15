@@ -1,0 +1,14 @@
+{
+  "name": "@repo/postcss-config",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.3.0"
+  },
+  "devDependencies": {
+    "@repo/tailwindcss-config": "workspace:*",
+    "postcss": "^8"
+  }
+}

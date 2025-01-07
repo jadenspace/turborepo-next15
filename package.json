@@ -5,6 +5,9 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "build:web": "turbo build --filter=web",
+    "dev:web": "turbo dev --filter=web",
+    "lint:web": "turbo lint --filter=web -- --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
