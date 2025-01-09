@@ -1,3 +1,3 @@
-import postcssConfig from '@repo/postcss-config';
+import postcssConfig from '@jaden/postcss-config';
 
 export default postcssConfig;

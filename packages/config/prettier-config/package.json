@@ -1,5 +1,5 @@
 {
-  "name": "@repo/prettier-config",
+  "name": "@jaden/prettier-config",
   "type": "module",
   "main": "./index.js",
   "devDependencies": {

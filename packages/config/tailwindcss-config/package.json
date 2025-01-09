@@ -1,5 +1,5 @@
 {
-  "name": "@repo/tailwindcss-config",
+  "name": "@jaden/tailwindcss-config",
   "type": "module",
   "main": "index.js",
   "devDependencies": {

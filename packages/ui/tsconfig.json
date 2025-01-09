@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/typescript-config/react-library",
+  "extends": "@jaden/typescript-config/react-library",
   "include": ["src/**/*", "eslint.config.js", "turbo/generators/**/*"],
   "exclude": ["node_modules", "dist"]
 }

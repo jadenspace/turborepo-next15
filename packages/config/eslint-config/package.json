@@ -1,13 +1,13 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@jaden/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "private": true,
   "main": "./index.js",
   "types": "./index.d.ts",
   "devDependencies": {
-    "@repo/prettier-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@jaden/prettier-config": "workspace:*",
+    "@jaden/typescript-config": "workspace:*",
     "@next/eslint-plugin-next": "^15",
     "@typescript-eslint/eslint-plugin": "8.18.0",
     "@typescript-eslint/parser": "8.18.0",

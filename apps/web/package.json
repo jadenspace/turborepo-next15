@@ -12,17 +12,17 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@jaden/ui": "workspace:*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/prettier-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "@repo/tailwindcss-config": "workspace:*",
-    "@repo/postcss-config": "workspace:*",
+    "@jaden/eslint-config": "workspace:*",
+    "@jaden/prettier-config": "workspace:*",
+    "@jaden/typescript-config": "workspace:*",
+    "@jaden/tailwindcss-config": "workspace:*",
+    "@jaden/postcss-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",

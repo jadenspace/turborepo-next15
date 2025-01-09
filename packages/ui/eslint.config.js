@@ -1,4 +1,4 @@
-import { reactInternalConfig } from "@repo/eslint-config";
+import { reactInternalConfig } from "@jaden/eslint-config";
 
 /**
  * @type {import("eslint").Linter.Config}
