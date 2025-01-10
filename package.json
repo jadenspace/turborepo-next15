@@ -4,7 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
+    "lint": "turbo lint -- --fix",
     "build:web": "turbo build --filter=web",
     "dev:web": "turbo dev --filter=web",
     "lint:web": "turbo lint --filter=web -- --fix",
@@ -15,7 +15,7 @@
     "turbo": "^2.3.3",
     "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@9.1.0",
   "engines": {
     "node": ">=18"
   }

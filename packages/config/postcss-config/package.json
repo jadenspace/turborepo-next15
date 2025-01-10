@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@jaden/tailwindcss-config": "workspace:*",
-    "postcss": "^8"
+    "postcss": "^8",
+    "autoprefixer": "^10.4.2"
   }
 }
