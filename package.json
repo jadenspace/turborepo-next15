@@ -3,14 +3,21 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint -- --fix",
     "build:web": "turbo build --filter=web",
+    "dev": "turbo dev",
     "dev:web": "turbo dev --filter=web",
-    "lint:web": "turbo lint --filter=web -- --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "turbo lint -- --fix",
+    "lint:web": "turbo lint --filter=web -- --fix"
+  },
+  "lint-staged": {
+    "*.{js|ts|jsx|tsx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
     "prettier": "^3.2.5",
     "turbo": "^2.3.3",
     "typescript": "5.5.4"
