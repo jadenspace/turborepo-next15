@@ -1,0 +1,46 @@
+{
+  "name": "@jaden/design-system-mui",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./theme": "./src/theme.ts",
+    "./index": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
+    "generate:component": "turbo gen react-component",
+    "check-types": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@jaden/eslint-config": "workspace:*",
+    "@jaden/postcss-config": "workspace:*",
+    "@jaden/prettier-config": "workspace:*",
+    "@jaden/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "^8.5.8",
+    "@storybook/addon-interactions": "^8.5.8",
+    "@storybook/addon-onboarding": "^8.5.8",
+    "@storybook/blocks": "^8.5.8",
+    "@storybook/react": "^8.5.8",
+    "@storybook/react-vite": "^8.5.8",
+    "@storybook/test": "^8.5.8",
+    "@turbo/gen": "^1.12.4",
+    "@types/node": "^20.11.24",
+    "@types/react": "18.3.0",
+    "@types/react-dom": "18.3.1",
+    "eslint-plugin-storybook": "^0.11.3",
+    "storybook": "^8.5.8",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.1",
+    "@mui/material": "^5.16.14",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

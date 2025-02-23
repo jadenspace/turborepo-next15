@@ -1,0 +1,78 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --header-height: 64px;
+  --footer-height: 50px;
+  /* --breadcrumb-height: 72px; */
+  --navigation-width: 320px;
+  --scroll-width: 0px;
+  --font-pretendard: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif;
+  --color-default: rgba(0, 0, 0, 0.87);
+  --color-light-black: rgba(0, 0, 0, 0.6);
+  --color-primary: rgba(66, 165, 245, 1);
+  --color-primary-dark: rgba(30, 136, 229, 1);
+  --color-nav-selected: rgba(33, 150, 243, 0.08);
+  --color-cell-selected: rgba(33, 150, 243, 0.12);
+  --color-cell-error: rgba(211, 47, 47, 0.08);
+  --color-image-error: rgba(255, 23, 23, 0.2);
+  --color-error-light: rgba(239, 83, 80, 1);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background);
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family:
+          Pretendard,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .table-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .table-title {
+    @apply border-t border-[rgba(0,0,0,0.12)] bg-[rgba(33,150,243,0.08)] px-6 py-4 text-left font-bold text-gray-600;
+  }
+
+  .table-header {
+    @apply border-r border-t border-[rgba(0,0,0,0.12)] bg-[rgba(33,150,243,0.08)] px-6 py-4 text-left font-bold text-gray-600;
+  }
+
+  .table-cell {
+    @apply flex items-center border-t border-[rgba(0,0,0,0.12)] px-6;
+  }
+}
+
+/* navigation hover 효과 커스텀 */
+.navigation:hover .navigation-hover\:block {
+  display: block !important;
+}
+
+*[readonly],
+.Mui-readOnly .MuiSelect-select {
+  cursor: default;
+  background-color: rgba(243, 244, 246, 0.5) !important;
+}

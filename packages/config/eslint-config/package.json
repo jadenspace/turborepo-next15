@@ -1,25 +1,22 @@
 {
   "name": "@jaden/eslint-config",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
-  "main": "./index.js",
-  "types": "./index.d.ts",
-  "devDependencies": {
-    "@jaden/prettier-config": "workspace:*",
-    "@jaden/typescript-config": "workspace:*",
-    "@next/eslint-plugin-next": "^15",
-    "@typescript-eslint/eslint-plugin": "8.18.0",
-    "@typescript-eslint/parser": "8.18.0",
-    "eslint": "9.16.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-import-resolver-typescript": "3.7.0",
-    "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-react": "7.37.2",
-    "eslint-plugin-react-hooks": "5.1.0",
-    "eslint-plugin-turbo": "2.3.3",
-    "eslint-plugin-unused-imports": "4.1.4",
-    "eslint-plugin-jsx-a11y": "^6.8.0"
+  "main": "index.js",
+  "dependencies": {
+    "@rushstack/eslint-config": "^3.7.1",
+    "@rushstack/eslint-patch": "^1.10.5",
+    "@tanstack/eslint-plugin-query": "^5.66.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^0.11.3",
+    "eslint-plugin-testing-library": "^7.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "8.57.0",
+    "typescript": "^5.0.0"
   }
 }

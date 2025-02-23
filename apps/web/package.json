@@ -7,27 +7,43 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --fix",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,md}\"",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@jaden/ui": "workspace:*",
+    "@jaden/design-system-mui": "workspace:*",
+    "@jaden/tailwindcss-config": "workspace:*",
+    "@mui/icons-material": "^6.4.1",
+    "@mui/material": "^5.16.4",
+    "@mui/material-nextjs": "^5.16.6",
+    "@mui/x-date-pickers": "^7.24.1",
+    "@tanstack/react-query": "^5.64.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "es-toolkit": "^1.31.0",
+    "eslint-plugin-import": "^2.31.0",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
     "@jaden/eslint-config": "workspace:*",
+    "@jaden/postcss-config": "workspace:*",
     "@jaden/prettier-config": "workspace:*",
     "@jaden/typescript-config": "workspace:*",
-    "@jaden/tailwindcss-config": "workspace:*",
-    "@jaden/postcss-config": "workspace:*",
+    "@tanstack/react-query-devtools": "^5.66.2",
     "@types/node": "^20",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
-    "typescript": "5.5.4",
-    "tailwindcss": "^3.4.1"
+    "eslint-plugin-storybook": "^0.11.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3"
   },
   "lint-staged": {
     "*.{js|ts|jsx|tsx}": [

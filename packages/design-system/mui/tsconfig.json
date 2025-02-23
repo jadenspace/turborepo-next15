@@ -1,0 +1,25 @@
+{
+  "extends": "@jaden/typescript-config/react-library",
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.tsx", 
+    "turbo/**/*.ts", 
+    "turbo/**/*.tsx", 
+    "stories/**/*.ts", 
+    "stories/**/*.tsx",
+    "*.ts",
+    "*.tsx",
+    "*.js",
+    "tailwind.config.js"
+  ],
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"],
+    "@/stories/*": ["stories/*"]
+  },
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowJs": true,
+    "checkJs": true
+  }
+}

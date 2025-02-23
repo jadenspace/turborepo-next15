@@ -1,7 +1,0 @@
-{
-  "extends": "@jaden/typescript-config/react-library",
-  "include": ["src/**/*.ts", "src/**/*.tsx", "turbo/**/*.ts", "turbo/**/*.tsx"],
-  "compilerOptions": {
-    "outDir": "dist"
-  }
-}

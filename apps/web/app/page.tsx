@@ -1,6 +1,6 @@
 import Image, { type ImageProps } from "next/image";
 
-import { Button } from "@jaden/ui/button";
+import { Button } from "@jaden/design-system-mui/index";
 
 import styles from "./page.module.css";
 
